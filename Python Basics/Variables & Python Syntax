@@ -1,0 +1,358 @@
+Lesson 3: Variables & Python Syntax
+What is a Variable?
+
+A variable is a named location in memory used to store data.
+
+Think of it as a label attached to a value.
+
+name  ─────► "Suman"
+
+age   ─────► 22
+
+salary─────► 25000
+
+Creating Variables
+
+Unlike Java, you don't declare the data type.
+
+Python
+name = "Suman"
+age = 22
+height = 5.8
+Java
+String name = "Suman";
+int age = 22;
+double height = 5.8;
+
+Python automatically determines the data type.
+
+Variable Assignment
+name = "Alex"
+
+print(name)
+
+Output
+
+Alex
+Multiple Variables
+name = "Alex"
+age = 22
+city = "Kolkata"
+
+print(name)
+print(age)
+print(city)
+
+Output
+
+Alex
+22
+Kolkata
+
+Multiple Assignment
+Method 1
+x, y, z = 10, 20, 30
+
+print(x)
+print(y)
+print(z)
+
+Output
+10
+20
+30
+
+Method 2
+a = b = c = 100
+
+print(a)
+print(b)
+print(c)
+
+Output
+100
+100
+100
+
+Swapping Variables
+
+One of Python's coolest features.
+
+x = 10
+y = 20
+
+x, y = y, x
+
+print(x)
+print(y)
+
+Output
+
+20
+10
+
+In Java, you'd usually need a temporary variable.
+
+Dynamic Typing
+
+Python variables can change their type.
+
+x = 10
+
+print(x)
+
+x = "Hello"
+
+print(x)
+
+Output
+10
+Hello
+
+Check the Data Type
+Use the type() function.
+
+name = "Suman"
+
+print(type(name))
+
+Output
+
+<class 'str'>
+
+More examples:
+
+print(type(100))
+print(type(3.14))
+print(type(True))
+
+Output
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+
+Variable Naming Rules
+Valid
+student_name = "Alex"
+
+totalMarks = 90
+
+age2 = 25
+
+_price = 100
+Invalid
+2age = 20
+
+Cannot start with a number.
+
+my-name = "Alex"
+
+Hyphens are not allowed in variable names.
+
+class = 10
+
+Keywords cannot be used as variable names.
+
+Naming Conventions
+
+Python follows snake_case.
+
+student_name = "Alex"
+
+total_marks = 90
+
+first_name = "John"
+
+Java commonly uses camelCase.
+
+studentName
+totalMarks
+firstName
+Keywords
+
+Keywords are reserved words with special meanings.
+
+Examples:
+
+if
+else
+for
+while
+class
+return
+import
+True
+False
+None
+
+To see all Python keywords:
+
+import keyword
+
+print(keyword.kwlist)
+Constants
+
+Python doesn't have true constants, but by convention we use UPPER_CASE.
+
+PI = 3.14159
+
+MAX_USERS = 100
+
+This tells other developers that the value shouldn't be changed.
+
+Memory Reference
+
+Variables point to objects in memory.
+
+a = 10
+
+b = a
+
+print(a)
+print(b)
+
+Both variables refer to the same integer object.
+
+Delete a Variable
+name = "Suman"
+
+del name
+
+Trying to use it afterwards:
+
+print(name)
+
+Produces:
+
+NameError: name 'name' is not defined
+Printing Variables
+name = "Alex"
+age = 22
+
+print(name)
+print(age)
+
+Print on one line:
+
+print(name, age)
+
+Output
+
+Alex 22
+Practice Examples
+Example 1
+name = "Suman"
+
+print(name)
+Example 2
+name = "Suman"
+age = 22
+city = "Kolkata"
+
+print(name)
+print(age)
+print(city)
+Example 3
+x = 5
+y = 8
+
+print(x + y)
+
+Output
+
+13
+Example 4
+language = "Python"
+
+print(type(language))
+Example 5
+a = 10
+b = 20
+
+a, b = b, a
+
+print(a)
+print(b)
+Common Mistakes
+Using a variable before creating it
+
+❌
+
+print(name)
+
+name = "Alex"
+
+✔
+
+name = "Alex"
+
+print(name)
+Using a keyword as a variable
+
+❌
+
+class = "Python"
+
+✔
+
+course = "Python"
+Invalid variable name
+
+❌
+
+1name = "Alex"
+
+✔
+
+name1 = "Alex"
+Interview Questions
+What is a variable?
+What is dynamic typing?
+Difference between Python and Java variable declaration?
+What is type()?
+What are naming conventions?
+What is a keyword?
+Does Python have constants?
+Explain multiple assignment.
+Explain variable swapping.
+Explain memory references in Python.
+📝 Practice Tasks
+
+Write programs to:
+
+Store your name, age, and city in variables and print them.
+Swap two numbers without using a third variable.
+Print the type of five different values (int, float, str, bool, list).
+Assign the same value to three variables and print them.
+Create constants such as PI, MAX_SPEED, and APP_NAME.
+📚 Summary
+
+You have learned:
+
+✅ What variables are
+✅ Variable assignment
+✅ Multiple assignment
+✅ Variable swapping
+✅ Dynamic typing
+✅ type() function
+✅ Naming rules
+✅ Naming conventions
+✅ Keywords
+✅ Constants
+✅ Memory references
+✅ Deleting variables
+🚀 Next Lesson: Data Types
+
+We'll explore Python's built-in data types in depth:
+
+Numeric types (int, float, complex)
+bool
+str
+list
+tuple
+set
+dict
+NoneType
+Mutable vs. immutable objects
+Type conversion (int(), float(), str(), etc.)
+Real-world examples and practice exercises

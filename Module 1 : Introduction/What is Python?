@@ -1,0 +1,179 @@
+Lesson 1: What is Python?
+Definition
+
+Python is a high-level, interpreted, general-purpose programming language created by Guido van Rossum and first released in 1991.
+
+It is designed to be:
+
+Easy to read
+Easy to write
+Easy to maintain
+Powerful enough for small scripts and large applications
+Why is Python popular?
+
+Python is one of the most versatile programming languages.
+
+It is used for:
+
+🌐 Web Development
+🤖 Artificial Intelligence
+📊 Data Science
+📈 Machine Learning
+🖥️ Desktop Applications
+📱 Automation
+☁️ Cloud Computing
+🔒 Cybersecurity
+🧪 Scientific Computing
+
+Why do developers love Python?
+1. Easy Syntax
+
+Java
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+
+Python
+
+print("Hello World")
+
+Much shorter and easier to read.
+
+2. English-like Code
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+3. Huge Library Support
+
+Python already includes libraries for many tasks.
+
+Examples:
+
+import math
+import random
+import os
+import datetime
+
+You don't have to build everything from scratch.
+
+4. Cross Platform
+
+A Python program can run on:
+
+Windows
+Linux
+macOS
+
+without changing the code in most cases.
+
+Where is Python used?
+Google
+Automation
+Internal tools
+Netflix
+Recommendation systems
+Data analysis
+NASA
+Scientific computing
+Instagram
+Backend services
+Spotify
+Data engineering
+OpenAI
+AI research
+Machine learning
+
+Advantages
+Beginner-friendly
+Large community
+Massive ecosystem
+Fast development
+Easy debugging
+Excellent documentation
+
+Disadvantages
+Slower than C/C++
+Higher memory usage
+Not ideal for mobile app development
+Less suitable for some real-time systems
+
+How Python Works
+Your Code
+     │
+     ▼
+Python Interpreter
+     │
+     ▼
+Bytecode (.pyc)
+     │
+     ▼
+Python Virtual Machine (PVM)
+     │
+     ▼
+Output
+
+Unlike Java:
+Java
+Source Code
+      ↓
+Compiler
+      ↓
+Bytecode
+      ↓
+JVM
+      ↓
+Output
+
+Python uses an interpreter, which executes code step by step.
+
+Features of Python
+High-Level Language
+Interpreted
+Object-Oriented
+Dynamically Typed
+Open Source
+Portable
+Extensible
+Large Standard Library
+Real-World Applications
+
+You can build:
+
+REST APIs
+AI chatbots
+Automation tools
+Web scrapers
+Games
+Desktop software
+Data dashboards
+ML models
+CLI tools
+Summary
+
+By the end of this lesson, you should know:
+
+✅ What Python is
+✅ Why Python is popular
+✅ Where Python is used
+✅ Advantages and disadvantages
+✅ How Python executes code
+✅ Common real-world use cases
+📝 Quick Quiz
+
+Who created Python?
+Is Python compiled or interpreted?
+Name three companies that use Python.
+What does "high-level language" mean?
+Name four areas where Python is widely used.
+
+🎯 Homework
+Write down five reasons why you want to learn Python.
+Research three companies that use Python and note what they use it for.
+Answer the five quiz questions without looking back at the notes.
+
+Once you've completed this lesson, we'll move to Lesson 2: Installing Python, where you'll install Python, configure VS Code, and run your very first Python program.

@@ -1,0 +1,282 @@
+Lesson 2: Installing Python & Setting Up the Environment
+
+By the end of this lesson, you'll be able to:
+
+Install Python
+Verify the installation
+Install VS Code
+Install the Python extension
+Run your first Python program
+Understand the Python interpreter
+
+1. Installing Python
+
+Go to the official Python website and download the latest stable version for your operating system.
+
+During installation on Windows, check the box that says "Add Python to PATH" before clicking "Install Now."
+
+On Linux (such as Fedora), Python is usually pre-installed.
+
+2. Verify the Installation
+
+Open your terminal.
+
+Check the Python version
+python --version
+
+or
+
+python3 --version
+
+Example output:
+
+Python 3.13.2
+
+3. Check pip
+
+pip is Python's package manager. It installs external libraries.
+
+pip --version
+
+or
+
+pip3 --version
+
+Example:
+
+pip 25.x from ...
+
+4. Check the Python Location
+
+Linux/macOS
+
+which python3
+
+Windows
+
+where python
+
+Example:
+
+/usr/bin/python3
+
+5. Install VS Code
+
+Install Visual Studio Code if you haven't already.
+
+Then install the Python extension by Microsoft.
+
+This extension provides:
+
+Syntax highlighting
+Auto-completion
+IntelliSense
+Debugging
+Code formatting
+Error detection
+
+6. Create Your First Project
+
+Create a folder.
+
+Python/
+
+Inside it, create a file.
+
+hello.py
+
+Project structure:
+
+Python/
+│
+└── hello.py
+7. Write Your First Program
+print("Hello, World!")
+
+Save the file.
+
+8. Run the Program
+
+Open the terminal in the project folder.
+
+python hello.py
+
+or
+
+python3 hello.py
+
+Output:
+
+Hello, World!
+
+9. Run Python Without a File (Interactive Mode)
+
+Open the terminal.
+
+python
+
+or
+
+python3
+
+You'll see something like:
+
+Python 3.13.x
+>>>
+
+Now type:
+
+print("Hello")
+
+Output:
+
+Hello
+
+Exit:
+
+exit()
+
+or press:
+
+Ctrl + D   (Linux/macOS)
+
+Ctrl + Z then Enter   (Windows)
+10. Understanding the Interpreter
+
+When you write:
+
+print("Hello")
+
+The interpreter executes it immediately.
+
+Python File
+     │
+     ▼
+Interpreter
+     │
+     ▼
+Output
+
+Unlike Java, there is no separate compilation step before running the program.
+
+11. Python File Extension
+
+Python files use:
+
+.py
+
+Examples:
+
+app.py
+
+main.py
+
+calculator.py
+
+student.py
+
+12. Comments
+
+Comments are ignored by Python and are used to explain code.
+
+Single-line comment:
+
+# This is a comment
+
+print("Hello")
+
+Multiple-line comments are commonly written using triple quotes.
+
+"""
+This is
+a multi-line comment
+"""
+
+Note: Triple-quoted strings are actually string literals, but they are often used as multi-line comments when they are not assigned to a variable.
+
+13. Common Beginner Errors
+Missing quotes
+
+❌
+
+print(Hello)
+
+✔
+
+print("Hello")
+Incorrect indentation
+
+❌
+
+if True:
+print("Hello")
+
+✔
+
+if True:
+    print("Hello")
+
+Python uses indentation (spaces) to define blocks of code.
+
+Wrong filename
+
+❌
+
+python helloo.py
+
+✔
+
+python hello.py
+
+14. Best Practices
+Use lowercase filenames.
+student.py
+Give meaningful names.
+expense_tracker.py
+
+weather_app.py
+
+Avoid names like:
+
+test.py
+
+abc.py
+
+new.py
+
+15. Folder Structure
+Python/
+│
+├── basics/
+│   ├── hello.py
+│   ├── variables.py
+│   └── operators.py
+│
+├── projects/
+│   └── calculator.py
+│
+└── README.md
+
+As you progress, we'll keep our code organised in this structure.
+
+📝 Quick Quiz
+What is the extension of a Python file?
+What command checks the Python version?
+What is pip used for?
+What symbol starts a single-line comment?
+Why is indentation important in Python?
+🎯 Practice
+
+Create these files and run each one:
+
+hello.py
+print("Hello, World!")
+greet.py
+print("Welcome to Python")
+info.py
+print("Name: Suman")
+print("Learning: Python")
+print("Goal: Become a Python Developer")
+What's Next?
+
+Lesson 3: Python Syntax & Variables

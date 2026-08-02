@@ -1,0 +1,370 @@
+Lesson 4: Data Types
+Learning Objectives
+
+By the end of this lesson, you will understand:
+
+What are data types?
+Numeric types
+Boolean type
+String
+List
+Tuple
+Set
+Dictionary
+None
+Mutable vs Immutable
+Type Conversion
+What is a Data Type?
+
+A data type defines:
+
+What kind of data a variable stores.
+What operations can be performed on it.
+
+Example:
+
+age = 21
+
+21 is an integer.
+
+name = "Suman"
+
+"Suman" is a string.
+
+Python Built-in Data Types
+Category	Data Types
+Numeric	    int, float, complex
+Boolean	    bool
+Text	    str
+Sequence	list, tuple, range
+Set	        set, frozenset
+Mapping	    dict
+Special	    NoneType
+
+
+1. Integer (int)
+
+Whole numbers.
+
+age = 21
+marks = 95
+temperature = -10
+
+print(type(age))
+
+Output
+
+<class 'int'>
+
+Examples
+
+10
+-50
+999999
+0
+2. Float (float)
+
+Numbers with decimal points.
+
+price = 99.99
+pi = 3.14159
+
+print(type(price))
+
+Output
+
+<class 'float'>
+
+Examples
+
+10.5
+100.0
+-3.2
+3. Complex (complex)
+
+Used in scientific and mathematical calculations.
+
+num = 3 + 4j
+
+print(num)
+print(type(num))
+
+Output
+
+(3+4j)
+
+<class 'complex'>
+
+Where:
+
+3 = Real Part
+
+4j = Imaginary Part
+4. Boolean (bool)
+
+Stores only two values.
+
+True
+False
+
+Example
+
+is_logged_in = True
+
+print(type(is_logged_in))
+
+Output
+
+<class 'bool'>
+Boolean from Comparison
+print(10 > 5)
+
+print(20 == 10)
+
+print(5 != 3)
+
+Output
+
+True
+
+False
+
+True
+5. String (str)
+
+A string is a sequence of characters.
+
+name = "Suman"
+
+city = 'Bangalore'
+
+Both are valid.
+
+print(type(name))
+
+Output
+
+<class 'str'>
+Multi-line String
+message = """
+Hello
+
+Welcome
+
+Python
+"""
+6. List (list)
+
+A list stores multiple values.
+
+Lists are ordered and mutable.
+
+numbers = [10, 20, 30, 40]
+
+print(numbers)
+
+Output
+
+[10, 20, 30, 40]
+
+Mixed data types:
+
+data = [1, "Suman", True, 4.5]
+7. Tuple (tuple)
+
+A tuple is like a list, but immutable.
+
+student = ("Suman", 21, "Bangalore")
+
+print(student)
+Difference
+
+List
+
+numbers = [1, 2, 3]
+
+Tuple
+
+numbers = (1, 2, 3)
+8. Set (set)
+
+A set stores unique values.
+
+nums = {1, 2, 3, 4}
+
+print(nums)
+
+Duplicate values are removed automatically.
+
+nums = {1, 1, 2, 2, 3, 3}
+
+print(nums)
+
+Output
+
+{1, 2, 3}
+9. Dictionary (dict)
+
+Stores data as key-value pairs.
+
+student = {
+    "name": "Suman",
+    "age": 21,
+    "city": "Bangalore"
+}
+
+print(student)
+
+Output
+
+{'name': 'Suman', 'age': 21, 'city': 'Bangalore'}
+
+Access values
+
+print(student["name"])
+
+Output
+
+Suman
+10. None
+
+Represents the absence of a value.
+
+x = None
+
+print(x)
+
+print(type(x))
+
+Output
+
+None
+
+<class 'NoneType'>
+Mutable vs Immutable
+Mutable (Can Change)
+List
+Dictionary
+Set
+
+Example
+
+numbers = [1, 2, 3]
+
+numbers.append(4)
+
+print(numbers)
+
+Output
+
+[1, 2, 3, 4]
+Immutable (Cannot Change)
+Integer
+Float
+Boolean
+String
+Tuple
+
+Example
+
+name = "Suman"
+
+name[0] = "A"
+
+Output
+
+TypeError
+
+Strings cannot be modified in place.
+
+Type Conversion
+
+Convert one data type into another.
+
+age = "21"
+
+print(type(age))
+
+Convert to integer.
+
+age = int(age)
+
+print(type(age))
+
+Examples
+
+print(int(3.9))
+
+Output
+
+3
+print(float(10))
+
+Output
+
+10.0
+print(str(100))
+
+Output
+
+"100"
+print(bool(1))
+
+Output
+
+True
+print(bool(0))
+
+Output
+
+False
+Practice Examples
+Example 1
+age = 21
+print(type(age))
+Example 2
+price = 99.99
+print(type(price))
+Example 3
+student = {
+    "name": "Suman",
+    "age": 21
+}
+
+print(student)
+Example 4
+numbers = [10, 20, 30]
+
+numbers.append(40)
+
+print(numbers)
+Example 5
+x = "100"
+
+print(int(x) + 20)
+
+Output
+
+120
+Common Interview Questions
+Difference between List and Tuple?
+Difference between Set and Dictionary?
+What is None?
+What is mutable and immutable?
+Difference between int and float?
+Can a list contain different data types?
+Why are dictionary keys unique?
+What happens when duplicate values are added to a set?
+📝 Practice Tasks
+
+Write a Python program that:
+
+Creates variables of every data type (int, float, complex, bool, str, list, tuple, set, dict, None).
+Prints the value and its type using type().
+Converts a string "250" into an integer and adds 50.
+Creates a list and appends a new element.
+Creates a set with duplicate values and prints the result.
+Creates a dictionary with your name, age, and city, then prints only the name.
+🎯 Assignment (Recommended)
+
+Complete all six practice tasks and paste your code here. I'll review it like a code reviewer, point out any mistakes, suggest improvements, and explain Python best practices before we move to the next lesson.
