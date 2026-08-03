@@ -1,0 +1,9 @@
+Operate on the binary representation of integers.
+
+Operator	Meaning
+&	        AND
+`	        `
+^	        XOR
+~	        NOT
+<<	        Left Shift
+>>	        Right Shift

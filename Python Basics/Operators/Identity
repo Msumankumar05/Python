@@ -1,0 +1,7 @@
+Identity Operators
+
+Identity operators compare whether two variables refer to the same object, not just whether their values are equal.
+
+Operator	Meaning
+is	        Same object
+is          not	Different objects
