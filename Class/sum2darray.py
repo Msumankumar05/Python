@@ -33,7 +33,7 @@ for row in x:
 
 for i in range(len(a)):
     for j in range(len(a[i])):
-        y[i][j] = a[i][j] * b[i][j]
+        y[i][j] = a[i][j] * b[j][i]
 
 
 print("Array y after multiplication:")
