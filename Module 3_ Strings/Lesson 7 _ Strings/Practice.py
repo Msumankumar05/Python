@@ -7,7 +7,7 @@ print(s1[::-1])
 
 language = "Python Programming"
 
-print(language[::2])
+print(language[0:6:])
 
 
 print(language.upper())
@@ -38,8 +38,8 @@ print(text[::2])
 print(text[-1::-2])
 
 
-inpute = "I love python programming"
+intput = "I love python programming"
 
-list1 = inpute.split()
+list1 = intput.split()
 
 print(len(list1))

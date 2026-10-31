@@ -1,0 +1,7 @@
+my_project/
+│
+├── main.py
+└── analyzer/                <-- This directory is the package
+    ├── __init__.py          <-- Initialises the package (can be empty)
+    ├── word_count.py        <-- Sub-module 1
+    └── sentiment.py         <-- Sub-module 2
